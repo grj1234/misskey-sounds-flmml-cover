@@ -1,0 +1,64 @@
+#CODING grj1234
+#USING POLY 2 FORCE
+
+/* フラグ: デフォルト効果音の新旧 ($newdefalutが0のとき新デフォルト、1のとき旧デフォルト) */
+$olddefalut=0;
+
+$rest{ms}=t625r%%ms;
+$patch_n=t744 @0 @e1,1,18,0,1 @v127;$patch_ud=t1125 @e1,1,36,0,0 @v120;$patch_s=@0 q16 l4 o6;
+$notes=$patch_s $patch_n /:$olddefalut $patch_ud:/ a/:$olddefalut+++:/e/:$olddefalut+++:/c/:$olddefalut&4:/;
+$notes_my=$patch_s $patch_n /:$olddefalut $patch_ud:/ f/:$olddefalut-----:/a/:$olddefalut--:/<d/:$olddefalut--2:/;
+$notify=$patch_s $patch_n /:$olddefalut $patch_ud:/ e/:$olddefalut+++++:/a/:$olddefalut/:7+:/2:/;
+$antenna=$patch_s $patch_ud l2 a+a+a+;
+$channel=t1125 @e1,1,0,127,9 @v102 @3 @w50 q12 l4 o6 da;
+
+x2 @q1
+$notes$rest{1000}
+$notes$rest{1200}
+$notes$rest{900}
+$notes$rest{2000}
+$notes$rest{700}
+$notes$rest{1200}
+$notify$rest{300}
+$notes$rest{700}
+$notes$rest{1000}
+$notes$rest{1200}
+$notes$rest{900}
+$channel$rest{1200}
+$notes$rest{1100}
+$notes$rest{1000}
+$notes$rest{800}
+$notes_my$rest{400}
+$notes$rest{900}
+$notes$rest{2000}
+$notes$rest{1000}
+$channel$rest{900}
+$notes$rest{1200}
+$notes$rest{900}
+$notes$rest{1300}
+$antenna$rest{700}
+$notes$rest{1500}
+$notes$rest{1000}
+$notify$rest{300}
+$notes$rest{950}
+$notes$rest{1400}
+$notes$rest{1550}
+$notify$rest{300}
+$notes$rest{800}
+$notes$rest{1000}
+$notes$rest{1700}
+$notes$rest{900}
+$notes_my$rest{500}
+$notes$rest{1650}
+$notes$rest{1000}
+$notes$rest{1800}
+$notes
+;
+
+/*
+このMMLはAGPLv3で配布されているMisskeyの付属アセットを基に作成しました。
+したがって、このMMLのライセンスはAGPLv3となります。
+
+Copyright © 2014-2023 syuilo and contributers
+And is distributed under The GNU Affero General Public License Version 3, you should have received a copy of the license file as LICENSE.
+*/
