@@ -1,7 +1,7 @@
 #CODING grj1234
 #USING POLY 2 FORCE
 
-/* フラグ: デフォルト効果音の新旧 ($newdefalutが0のとき新デフォルト、1のとき旧デフォルト) */
+/* フラグ: デフォルト効果音の新旧 (0のとき新デフォルト、1のとき旧デフォルト) */
 $olddefalut=0;
 
 $rest{ms}=t625r%%ms;
