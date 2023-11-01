@@ -1,0 +1,15 @@
+#CODING grj1234
+#USING POLY 2 FORCE
+
+t744;
+@0 x2 @e1,1,18,0,1 @v127 q16 @q1 l4
+o5 cea
+;
+
+/*
+このMMLはAGPLv3で配布されているMisskeyの付属アセットを基に作成しました。
+したがって、このMMLのライセンスはAGPLv3となります。
+
+Copyright © 2014-2023 syuilo and contributers
+And is distributed under The GNU Affero General Public License Version 3, you should have received a copy of the license file as LICENSE.
+*/
